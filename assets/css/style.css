@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    rgba(196, 196, 255, 0.741),
+    rgba(82, 82, 255, 0.784),
+    rgba(232, 130, 147, 0.23)
+  );
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+main {
+  padding: 15px;
+  margin-left: 8%;
+  margin-top: 10px;
+}
+
+#img {
+  float: right;
+  align-items: left;
+  display: flex;
+}
+
+span {
+  color: rgb(230, 114, 186);
+}
+
+footer {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(82, 82, 255, 0.934),
+    rgba(116, 116, 231, 0.619)
+  );
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+#brand {
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 15px;
+  color: rgb(131, 20, 57);
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 17px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+nav ul ul {
+  position: absolute;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 5px 15px 15px 15px;
+  left: -15px;
+  color: rgb(0, 0, 0);
+  display: none;
+}
+
+nav li:hover > ul {
+  display: block !important;
+}
+
+/* Gaya CSS untuk kotak-kotak di bagian body */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.box {
+  flex-basis: calc(80% - 30px); /* Maksimal 2 kotak per baris */
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.box img {
+  max-width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 60%;
+}
